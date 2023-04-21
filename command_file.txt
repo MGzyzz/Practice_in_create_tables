@@ -1,0 +1,91 @@
+CREATE TABLE car_company(
+  name_company varchar(50) NOT NULL ,
+  creation_request_confirmation VARCHAR(15) NOT NULL,
+  order_date DATE NOT NULL,
+  number_of_cars INTEGER NOT NULL,
+  sending_of_order DATE NOT NULL,
+  arrival varchar(20) NOT NULL
+);
+
+CREATE TABLE creation_detail(
+  machine_detailing_factory VARCHAR(15) NOT NULL,
+  city VARCHAR(10) NOT NULL,
+  engine_sizes DOUBLE PRECISION NOT NULL,
+  number_of_engines INTEGER NOT NULL,
+  front_rear_all_wheel_drive INTEGER NOT NULL,
+  number_of_drives INTEGER NOT NULL,
+  manual_or_automatic_transmission VARCHAR(10),
+  number_of_gearboxes INTEGER NOT NULL,
+  factory_income_share DECIMAL(4,2) NOT NULL,
+  stock INTEGER NOT NULL
+);
+
+CREATE TABLE plant_for_the_production_of_materials(
+  quantity INTEGER NOT NULL,
+  delivery_time DATE NOT NULL,
+  stock INTEGER NOT NULL
+);
+
+CREATE TABLE customer_table(
+    client VARCHAR(20) NOT NULL,
+    confirmation VARCHAR(15) NOT NULL,
+    attraction_priority VARCHAR(50) NOT NULL,
+    country VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE attractions_information(
+    country VARCHAR(100) NOT NULL,
+    sight VARCHAR(255) NOT NULL,
+    names_sight VARCHAR(255) NOT NULL,
+    coordinates VARCHAR(100) NOT NULL,
+    origin VARCHAR(255) NOT NULL,
+    historical_reference VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE tour_operators(
+    tour_operator VARCHAR(255) NOT NULL,
+    flight_confirmation VARCHAR(100) NOT NULL,
+    hotel_confirmation VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE hotel(
+    country VARCHAR(100) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    hotel_name VARCHAR(100) NOT NULL,
+    upcoming_bookings DATE NOT NULL,
+    confirmation VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE airlines(
+    name_airlines VARCHAR(255) NOT NULL,
+    destination_points VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE information_country(
+    name_country VARCHAR(100) NOT NULL,
+    number_of_regions INTEGER NOT NULL
+);
+
+CREATE TABLE kazahstan(
+    regions VARCHAR(100) NOT NULL,
+    geographical_location VARCHAR(255) NOT NULL,
+    population INTEGER NOT NULL,
+    average_winter_and_summer_temperatures VARCHAR(255) NOT NULL,
+    descriptions VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE uzbekistan(
+    regions VARCHAR(100) NOT NULL,
+    geographical_location VARCHAR(255) NOT NULL,
+    population INTEGER NOT NULL,
+    average_winter_and_summer_temperatures VARCHAR(255) NOT NULL,
+    descriptions VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE tajikistan(
+    regions VARCHAR(100) NOT NULL,
+    geographical_location VARCHAR(255) NOT NULL,
+    population INTEGER NOT NULL,
+    average_winter_and_summer_temperatures VARCHAR(255) NOT NULL,
+    descriptions VARCHAR(255) NOT NULL
+);

@@ -1,0 +1,5 @@
+INSERT INTO public.car_company (name_company, creation_request_confirmation, order_date, number_of_cars, sending_of_order, arrival) VALUES ('Mercedes', 'Confirmed', '2020-07-05', 450, '2020-12-14', 'Germany');
+INSERT INTO public.car_company (name_company, creation_request_confirmation, order_date, number_of_cars, sending_of_order, arrival) VALUES ('BMW', 'Confirmed', '2021-12-15', 900, '2022-04-29', 'France');
+INSERT INTO public.car_company (name_company, creation_request_confirmation, order_date, number_of_cars, sending_of_order, arrival) VALUES ('Honda', 'Expectation', '2022-05-20', 300, '2022-09-01', 'Australia');
+INSERT INTO public.car_company (name_company, creation_request_confirmation, order_date, number_of_cars, sending_of_order, arrival) VALUES ('Toyota', 'Expectation', '2022-09-28', 150, '2023-02-07', 'Poland');
+INSERT INTO public.car_company (name_company, creation_request_confirmation, order_date, number_of_cars, sending_of_order, arrival) VALUES ('Porsche', 'Confirmed', '2022-12-01', 100, '2023-05-10', 'Italy');
